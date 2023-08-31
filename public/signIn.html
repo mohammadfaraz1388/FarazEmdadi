@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <title>ارسال پیام</title>
+</head>
+<body>
+
+        <!-- navbar for desktop start here -->
+        <nav class="hidden sm:block container mt-5">
+            <section class="flex justify-between items-center">
+            <div>
+            <img src="../assets/images/FarazDeveloper.png" alt="Logo" class="w-12">
+            </div>
+            <ul class="flex w-96 h-10 items-center justify-between">
+                <a href="../index.html"><li class="hover:text-sky-500 transition-all cursor-pointer hover:scale-x-110 hover:scale-y-110">خانه</li></a>
+                <a href="../public/biography.html"><li class="hover:text-sky-500 transition-all cursor-pointer hover:scale-x-110 hover:scale-y-110">بیوگرافی</li></a>
+                <a href="../public/connectToMe.html"><li class="hover:text-sky-500 transition-all cursor-pointer hover:scale-x-110 hover:scale-y-110">ارتباط با من</li></a>
+                <a href="../public/myWork.html"><li class="hover:text-sky-500 transition-all cursor-pointer hover:scale-x-110 hover:scale-y-110">نمونه کارها</li></a>
+            </ul>
+            </section>
+        </nav>
+        <!-- navbar for desktop end here -->
+    
+        <!-- navbar for mobile start here -->
+        <nav class="container mt-5 block sm:hidden relative">
+            <section class="flex justify-between items-center">
+                    <div class="relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" id="menu">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>                  
+                    </div>
+                    <div id="showBox" class="absolute ml-24 mt-48 bg-white/80 p-2 flex items-center justify-center">
+                        <ul class="flex flex-col leading-8 w-20">
+                        <a href="../index.html"><li class="">خانه</li></a>
+                        <a href="../public/biography.html"><li class="">بیوگرافی</li></a>
+                        <a href="../public/connectToMe.html"><li class="">ارتباط با من</li></a>
+                        <a href="../public/myWork.html"><li class="">نمونه کارها</li></a>
+                        <li class="text-sky-500">ارسال پیام</li>
+                        </ul>
+                    </div>
+    
+                    <div>
+                        <img src="../assets/images/FarazDeveloper.png" alt="Logo" class="w-12">
+                    </div>
+    
+            </section>
+        </nav>
+        <!-- navBar for mobile end here -->
+
+        <!-- form for desktop start here-->
+    <form method="post" action="../save.php" class="hidden sm:block container mt-10">
+        <section class="flex justify-between gap-x-20">
+        <section class="w-1/2 mr-10 gap-y-3 flex flex-col justify-center">
+            <div class="flex flex-col gap-y-3 mb-5">
+            <h1 class="font-black text-3xl text-sky-500 mr-16">روش ارسال پیام</h1>
+            <p class="w-96 mr-16">
+                برای ارسال پیام به من ، ابتدا نام خود را وارد کرده و سپس متن پیام را می نویسید
+                <br>
+                پس از پر کردن کادر ها بر روی گزینه ارسال کلیک کرده تا پیام شما به من ارسال شود 
+                <br>
+            </p>
+            </div>
+            
+        <div>
+            <label for="#" class="mr-5">نام :</label>
+            <input name="usernanme" type="text" id="fullName" class="mr-4 border border-gray-500 h-20 w-96 rounded-lg p-1 focus:outline-none" placeholder="محمد فراز امدادی">
+        </div>
+        <div>
+            <label for="#">متن پیام :</label>
+            <input  name="useremail" type="text" id="text" class="border border-gray-500  rounded-lg p-1 h-20 w-96 focus:outline-none" placeholder="من میخواهم که برنامه نویسی یاد بگیرم ، آیا...">
+        </div>
+        <input type="submit" onclick="MyFunction()" value="ارسال" class="bg-sky-500 mr-36 cursor-pointer p-2 w-40 text-white rounded-lg hover:text-sky-500 hover:bg-white hover:border hover:border-sky-500 transition-all hover:scale-x-110 hover:scale-y-110"> 
+        </section>
+        <section class="w-1/2">
+            <img src="../assets/images/Send.png" alt="Send">
+        </section>
+        </section>
+    </form>
+
+    <!-- form for desktop end here-->
+
+    <!-- form for mobile start here -->
+
+    <form method="post" action="../save.php" class="container mt-10 block sm:hidden">
+        <section class="flex flex-col gap-y-10 mb-5">
+            <div>
+                <img src="../assets/images/Send.png" alt="Send">
+            </div>
+            <div>
+            <h1 class="font-black text-2xl text-sky-500">روش ارسال پیام</h1>
+            <p class=" text-justify mt-4">
+                برای ارسال پیام به من ، ابتدا نام خود را وارد کرده و سپس متن پیام را می نویسید
+                <br>
+                پس از پر کردن کادر ها بر روی گزینه ارسال کلیک کرده تا پیام شما به من ارسال شود 
+                <br>
+                <span class="text-rose-500">نکته : همواره نظرات خود را برای من بنویسید و در صورت داشتن سوال از راه های ارتباط با من استفاده کنید</span>
+            </p>
+            </div>
+            <div>
+                <label for="#" class="mr-5">نام :</label>
+                <input name="usernanme" type="text" id="fullName" class="mr-4 border border-gray-500  rounded-lg p-1 w-64 h-20 focus:outline-none" placeholder="محمد فراز امدادی">
+            </div>
+            <div class="-mt-5">
+                <label for="#">متن پیام :</label>
+                <input name="useremail" type="text" id="text" class="border border-gray-500  rounded-lg p-1 w-64 h-20 focus:outline-none" placeholder="یک سوالی برام پیش اومد ، آیا...">
+            </div>
+            <input type="submit" onclick="MyFunction()" value="ارسال" class="bg-sky-500 mr-20 cursor-pointer p-2 w-40 text-white rounded-lg"> 
+        </section>
+    </form>
+
+    <!-- form for mobile end here -->
+
+    <!-- linking jQuery start here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../src/menu.js"></script>
+    <!-- linking jQuery end here -->
+    <script src="../src/localStorage.js"></script>
+
+</body>
+</html>

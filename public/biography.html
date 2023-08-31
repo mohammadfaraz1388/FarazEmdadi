@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <title>بیوگرافی</title>
+</head>
+<body>
+    <!-- navbar for desktop start here -->
+    <nav class="hidden sm:block container mt-5">
+        <section class="flex justify-between items-center">
+        <div>
+            <img src="../assets/images/FarazDeveloper.png" alt="Logo" class="w-12">
+        </div>
+        <ul class="flex w-96 h-10 items-center justify-between">
+            <a href="../index.html"><li class="hover:text-sky-500 transition-all cursor-pointer hover:scale-x-110 hover:scale-y-110">خانه</li></a>
+            <li class="border-b-2 w-[54px] flex justify-center items-center border-sky-500 cursor-default">بیوگرافی</li>
+            <a href="../public/connectToMe.html"><li class="hover:text-sky-500 transition-all cursor-pointer hover:scale-x-110 hover:scale-y-110">ارتباط با من</li></a>
+            <a href="../public/myWork.html"><li class="hover:text-sky-500 transition-all cursor-pointer hover:scale-x-110 hover:scale-y-110">نمونه کارها</li></a>
+        </ul>
+        <a href="signIn.html" class="w-32 p-1 bg-sky-500 text-white flex items-center justify-center transition-all rounded-lg hover:border hover:border-sky-500 hover:text-sky-500 hover:bg-white hover:scale-x-110 hover:scale-y-110">ارسال پیام</a>
+        </section>
+    </nav>
+    <!-- navbar for desktop end here -->
+
+    <!-- navbar for mobile start here -->
+    <nav class="container mt-5 block sm:hidden relative">
+        <section class="flex justify-between items-center">
+                <div class="relative">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" id="menu">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>                  
+                </div>
+                <div id="showBox" class="absolute ml-24 mt-48 bg-white/80 p-2 flex items-center justify-center">
+                    <ul class="flex flex-col leading-8 w-20">
+                    <a href="../index.html"><li class="">خانه</li></a>
+                    <li class="text-sky-500">بیوگرافی</li>
+                    <a href="../public/connectToMe.html"><li class="">ارتباط با من</li></a>
+                    <a href="../public/myWork.html"><li class="">نمونه کارها</li></a>
+                    <a href="signIn.html"><li>ارسال پیام</li></a>
+                    </ul>
+                </div>
+
+                <div>
+                    <img src="../assets/images/FarazDeveloper.png" alt="Logo" class="w-12">
+                </div>
+
+        </section>
+    </nav>
+
+    <!-- navbar for mobile end here -->
+
+    <!-- header for desktop start here -->
+
+    <header class="container hidden sm:block mt-10">
+        <section class="flex justify-between">
+        <div class="w-1/2 h-[500px] flex flex-col gap-y-3">
+        <h1 class="font-black text-3xl text-sky-500">بیشتر با من آشنا شو!</h1>
+        <p class="leading-8">
+            نام : محمد فراز امدادی ماسوله
+            <br>
+            سن : 15
+            <br>
+            شغل : برنامه نویسی
+            <br>
+            توانایی ها : تدریس و کد نویسی
+            <br>
+            پایه : نهم
+            <br>
+            حرفه اصلی : برنامه نویسی فرانت اند
+        </p>
+        </div>
+        <div class="w-1/2 h-[500px]">
+            <img src="../assets/images/againMe!.jpg" alt="againMe!" class="w-96 rounded-lg mr-36">
+        </div>
+        </section>
+    </header>
+
+    <!-- header for desktop end here -->
+
+    <!-- header for mobile start here -->
+
+    <header class="container block sm:hidden">
+        <section>
+            <div>
+                <img src="../assets/images/againMe!.jpg" alt="againMe!" class="rounded-lg mt-10"> 
+            </div> 
+            <div class="mt-5">
+                <h1 class="font-black text-3xl text-sky-500">بیشتر با من آشنا شو!</h1>
+                <p class="leading-8 mt-2">
+                    نام : محمد فراز امدادی ماسوله
+                    <br>
+                    سن : 15
+                    <br>
+                    شغل : برنامه نویسی
+                    <br>
+                    توانایی ها : تدریس و کد نویسی
+                    <br>
+                    پایه : نهم
+                    <br>
+                    حرفه اصلی : برنامه نویسی فرانت اند
+                </p>
+            </div>
+        </section>
+    </header>
+
+    <!-- header for mobile end here -->
+
+    
+
+    <!-- linking jQuery start here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../src/menu.js"></script>
+    <!-- linking jQuery end here -->
+
+</body>
+</html>
